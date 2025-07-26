@@ -158,14 +158,19 @@
   "priceRange": "$$"
 
 }
-</script>
-  <script>
-  const messageBox = document.getElementById("message");
-  const charCount = document.getElementById("charCount");
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const messageBox = document.getElementById("message");
+    const charCount = document.getElementById("charCount");
 
-  messageBox.addEventListener("input", () => {
+    // Initialize count on page load
     charCount.textContent = `${messageBox.value.length} / 1000`;
+
+    messageBox.addEventListener("input", () => {
+      charCount.textContent = `${messageBox.value.length} / 1000`;
+    });
   });
 </script>
+
 </body>
 </html>
