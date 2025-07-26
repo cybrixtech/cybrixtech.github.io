@@ -121,7 +121,7 @@
     <input type="text" name="company" placeholder="Company (optional)" />
     <input type="tel" name="phone" placeholder="Phone" required />
     <input type="email" name="email" placeholder="Email" required />
-    <textarea name="message" placeholder="Tell us about your needs..." rows="5" maxlength="1000"></textarea>
+    <textarea id="message" name="message" placeholder="Tell us about your needs..." rows="5" maxlength="1000"></textarea>
     <small id="charCount">0 / 1000</small>
     <input type="hidden" name="_next" value="https://cybrixtech.github.io/thank-you.html">
     <input type="hidden" name="_captcha" value="true">
@@ -148,16 +148,17 @@
   "telephone": "+971503037120",
   "description": "IT support, CCTV setup & development services across UAE.",
   "areaServed": "UAE",
-  "image": "https://cybrixtech.github.io/images/og-preview.jpg"
-  ,"openingHours": "Mo-Sa 09:00-18:00",
+  "image": "https://cybrixtech.github.io/images/og-preview.jpg",
+  "openingHours": "Mo-Sa 09:00-18:00",
   "geo": {
     "@type": "GeoCoordinates",
     "latitude": "25.276987",
     "longitude": "55.296249"
   },
   "priceRange": "$$"
-
 }
+</script>
+
 <script>
   document.addEventListener("DOMContentLoaded", function () {
     const messageBox = document.getElementById("message");
