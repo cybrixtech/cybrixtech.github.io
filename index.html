@@ -35,7 +35,12 @@
   form { background: #fff; padding: 2em; border-radius: 10px; box-shadow: 0 6px 16px rgba(0,0,0,0.1); }
   input, textarea, select { width: 100%; padding: 12px; margin: 10px 0; border: 1px solid #ccc; border-radius: 5px; }
   textarea { resize: none; overflow-y: auto; } /* Prevents stretch/drop outside box */
-  button { background: #007BFF; color: #fff; padding: 12px 20px; border: none; border-radius: 5px; cursor: pointer; }
+  button { background: #002147; color: #fff; padding: 12px 20px; border: none; border-radius: 5px; cursor: pointer; 
+          transition: background 0.3s ease;
+button:hover {
+  background: #00152e; /* Slightly darker for hover effect */
+}
+}
   button:hover { background: #0056b3; }
   .whatsapp-btn { position: fixed; bottom: 20px; right: 20px; background: #25D366; color: white; padding: 14px 20px; border-radius: 50px; text-decoration: none; font-weight: bold; box-shadow: 0 4px 8px rgba(0,0,0,0.2); }
   small#charCount {
@@ -119,16 +124,17 @@
       </optgroup>
     </select>
    <label for="name">Full Name</label>
-<input id="name" type="text" name="name" placeholder="Full Name" required />
+<input id="name" type="text" name="name" placeholder="Full Name" autocomplete="name" required />
+
 
 <label for="company">Company (optional)</label>
-<input id="company" type="text" name="company" placeholder="Company (optional)" />
+<input id="company" type="text" name="company" placeholder="Company (optional)" autocomplete="organization" />
 
 <label for="phone">Phone</label>
-<input id="phone" type="tel" name="phone" placeholder="Phone" required />
+<input id="phone" type="tel" name="phone" placeholder="Phone" autocomplete="tel" required />
 
 <label for="email">Email</label>
-<input id="email" type="email" name="email" placeholder="Email" required />
+<input id="email" type="email" name="email" placeholder="Email" autocomplete="email" required />
 
 <label for="message">Your Message</label>
 <textarea id="message" name="message" placeholder="Tell us about your needs..." rows="5" maxlength="1000"></textarea>
