@@ -1,6 +1,8 @@
+# robots.txt for CyBrix Technologies
+
 User-agent: *
 Disallow: /thank-you.html
-
 Allow: /
 
+# Sitemaps
 Sitemap: https://cybrixtech.github.io/sitemap.xml
