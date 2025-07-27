@@ -1,4 +1,6 @@
 User-agent: *
 Disallow: /thank-you.html
 
+Allow: /
+
 Sitemap: https://cybrixtech.github.io/sitemap.xml
